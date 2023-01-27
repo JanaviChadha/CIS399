@@ -9,7 +9,7 @@
         padding: 0;
       }
       header {
-        background-color: #f1f1f1;
+        background-color: #4070c8;
         padding: 20px;
         text-align: center;
       }
@@ -17,7 +17,7 @@
         margin: 0;
       }
       main {
-        background-color: #f9f9f9;
+        background-color: #2064c9;
         padding: 20px;
       }
       .weather-card {
@@ -27,6 +27,7 @@
         margin: 20px auto;
         max-width: 400px;
         padding: 20px;
+        text-align: center;
       }
       .weather-card img {
         width: 50%;
@@ -45,6 +46,7 @@
         margin: 10px auto;
         max-width: 200px;
         padding: 10px;
+        text-align: center;
       }
       .week-weather-card img {
         width: 50%;
@@ -74,6 +76,46 @@
       .more-info-week-weather-card p {
         margin: 10px 0;
       }
+
+      .additional-info-weather-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #cccccc;
+        margin: 10px auto;
+        width: 900px;
+        height: 100px;
+        padding: 10px;
+        text-align: left  ;
+      }
+      .additional-info-weather-card img {
+        width: 50%;
+      }
+      .additional-info-weather-card h2 {
+        margin: 10px 0;
+      }
+      .additional-info-weather-card p {
+        margin: 10px 0;
+      }
+
+      .more-info-weather-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #cccccc;
+        margin: 20px auto;
+        max-width: 900px;
+        max-height: 500px;
+        padding: 20px;
+      }
+      .more-info-week-weather-card img {
+        width: 50%;
+      }
+      .more-info-week-weather-card h2 {
+        margin: 10px 0;
+      }
+      .more-info-week-weather-card p {
+        margin: 10px 0;
+      }
+
       footer {
         background-color: #f1f1f1;
         padding: 20px;
@@ -88,25 +130,71 @@
       width: 100%; 
       } 
 
+      .grid-container-element-additional { 
+      display: grid; 
+      grid-template-columns:  1fr; 
+      grid-gap: 10px; 
+      border: 1px solid rgb(244, 244, 244); 
+      width: 100%; 
+      }
+      
+      .grid-container-element-pictures { 
+      display: grid; 
+      grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; 
+      grid-gap: 10px; 
+      border: 1px solid rgb(244, 244, 244); 
+      width: 100%; 
+      }
+      .icon {
+            margin-left: 10px;
+            float: right;
+        }
+
     </style>
   </head>
   <body>
     <header>
+      <span class="icon">
+        <img width="50" height="50" src="settings.png" alt="Settings">
+      </span>
       <h1>WeatherWise</h1>
     </header>
     <main>
       <div class="weather-card">
-        <img src="C:\Users\Janav\Documents\CIS399\Weather App\sun png.png" alt="Weather Icon">
+        <img src="sun png.png" alt="Weather Icon">
         <h2>Dallas, Texas</h2>
         <p>Monday, January 24th, 2022</p>
         <p>Sunny</p>
         <p>Temperature: 72°F</p>
+        <p>Sunny</p>
+        <p>Temperature: 72°F</p>
+        
       </div>
 
+      <div class="grid-container-element-additional">
+        <div class="additional-info-weather-card">
+          <!-- <img src="C:\Users\Janav\Documents\CIS399\Weather App\sun png.png" alt="Weather Icon"> -->
+          <p>Precipitation: 46%  | Humidity: 46%  | Wind: 8 mph </p>
+           <p> We reccomend wearing light waterproof clothing today!  </p>
+        </div>
+        </div>
+        <div class="grid-container-element-pictures">
+          <img max-width="50" height="50" src="denim-shorts.png" alt="Weather Icon">
+          <img max-width="50" height="50" src="denim-shorts.png" alt="Weather Icon">
+          <img max-width="50" height="50" src="denim-shorts.png" alt="Weather Icon">
+          <img max-width="50" height="50" src="denim-shorts.png" alt="Weather Icon">
+          <img max-width="50" height="50" src="denim-shorts.png" alt="Weather Icon">
+          <img max-width="50" height="50" src="denim-shorts.png" alt="Weather Icon">
+          <img max-width="50" height="50" src="denim-shorts.png" alt="Weather Icon">
+          <img max-width="50" height="50" src="denim-shorts.png" alt="Weather Icon">
+          <img max-width="50" height="50" src="denim-shorts.png" alt="Weather Icon">
+
+        </div>
+    </div>
 
       <div class="grid-container-element">
         <div class="week-weather-card">
-          <img src="C:\Users\Janav\Documents\CIS399\Weather App\sun png.png" alt="Weather Icon">
+          <img src="sun png.png" alt="Weather Icon">
           <h2>Monday</h2>
           <p>Monday, January 24th, 2022</p>
           <p>Sunny</p>
@@ -114,19 +202,19 @@
         </div>
 
         <div class="week-weather-card">
-          <img src="C:\Users\Janav\Documents\CIS399\Weather App\sun png.png" alt="Weather Icon">
+          <img src="sun png.png" alt="Weather Icon">
           <h2>Tuesday</h2>
-          <p>Monday, January 24th, 2022</p>
+          <p>Tuesday, January 25th, 2022</p>
           <p>Sunny</p>
-          <p>Temperature: 72°F</p>
+          <p>Temperature: 80°F</p>
         </div>
 
         <div class="week-weather-card">
-          <img src="C:\Users\Janav\Documents\CIS399\Weather App\sun png.png" alt="Weather Icon">
+          <img src="clouds.png" alt="Weather Icon">
           <h2>Wednesday</h2>
-          <p>Monday, January 24th, 2022</p>
-          <p>Sunny</p>
-          <p>Temperature: 72°F</p>
+          <p>Wednesday, January 26th, 2022</p>
+          <p>Cloudy</p>
+          <p>Temperature: 60°F</p>
         </div>
     </div>
 
